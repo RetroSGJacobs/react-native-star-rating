@@ -111,9 +111,7 @@ class StarButton extends Component {
         />
       );
     } else {
-      iconElement = (
-        <starIconName size={starSize} color={starColor} style={newStarStyle} />
-      );
+      iconElement = (starIconName);
 
       // const imageStyle = {
       //   width: starSize,
