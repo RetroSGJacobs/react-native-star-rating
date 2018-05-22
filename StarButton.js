@@ -111,23 +111,27 @@ class StarButton extends Component {
         />
       );
     } else {
-      const imageStyle = {
-        width: starSize,
-        height: starSize,
-        resizeMode: 'contain',
-      };
-
-      const iconStyles = [
-        imageStyle,
-        newStarStyle,
-      ];
-
       iconElement = (
-        <Image
-          source={starIconName}
-          style={iconStyles}
-        />
+        <starIconName size={starSize} color={starColor} style={newStarStyle} />
       );
+
+      // const imageStyle = {
+      //   width: starSize,
+      //   height: starSize,
+      //   resizeMode: 'contain',
+      // };
+      //
+      // const iconStyles = [
+      //   imageStyle,
+      //   newStarStyle,
+      // ];
+      //
+      // iconElement = (
+      //   <Image
+      //     source={starIconName}
+      //     style={iconStyles}
+      //   />
+      // );
     }
 
     return iconElement;
